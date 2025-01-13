@@ -1,0 +1,740 @@
+:root{
+    --orange-color:#FA7436;
+    --black-color:#222222;
+    --light-orange-color:#FFE7DB;
+    --white-color:#FEFCFB;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Poppins",sans-serif;   
+}
+span{
+    color: #FA7436;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--white-color);
+    background-color: antiquewhite;
+}
+
+/* NAV BAR */
+.navigation{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 20px;
+    background-color:#FFE7DB;
+    color: var(--black-color);
+    height: 114px;
+    width: 100%;
+}
+.navigation .logo{
+    font-family: "Volkhov",sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+.navigation .logo h4 img{
+    height: 19px;
+    width: 19px;
+    margin-left: 10px;
+}
+.navigation .navigation-menu{
+    display: flex;
+    
+}
+.navigation .navigation-menu ul{
+    display: flex;
+    list-style: none;
+}
+.navigation .navigation-menu ul li{
+    margin: 0 15px;
+}
+.navigation .navigation-menu ul li a{
+    text-decoration: none;
+    color: var(--black-color);
+    font-size: 16px;
+}
+.navigation .btn-account a{
+    text-decoration: none;
+    color: var(--orange-color);
+    margin: 25px;    
+}
+.navigation .btn-account a:hover{
+    background-color: #FA7436;
+    color: #FEFCFB;
+    height: 50px;
+    width: 160px;
+    border-radius: 5px;
+}
+
+/* HERO SECTION */
+header{
+    height: 949px;
+    width: 1920px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color: #FFE7DB;
+}
+.hero-section .content-info{
+    display: flex;
+    flex-wrap: wrap;
+    height: 486px;
+    width: 521px;   
+    position: absolute;
+    left: 200px;
+    top: 160px; 
+}
+.hero-section .content-info h1{
+    font-family: "Volkhov",sans-serif;
+    font-size: 64px;
+    font-weight: bold;
+}
+.hero-section .content-info p{
+    font-family: "Poppins",sans-serif;
+    font-size: 20px;
+    color: #666666;
+}
+.hero-section .content-info .discover{
+    height: 60px;
+    width: 168px;
+    align-content: center;
+    text-align: center;
+    border-color: #FA7436;
+    border-width: medium;
+    border-radius: 5px;
+}
+.hero-section .content-info .discover a{
+    text-decoration: none;
+    color: #FA7436;
+}
+.hero-section .content-info .discover:hover{
+    background-color: #FEFCFB;
+}
+.hero-section .content-image {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.hero-section .content-image .airplane img{
+    height: 191.01px;
+    width: 700px;
+    position: absolute;
+    top: 50px;
+    left:-100px ;
+
+}
+.hero-section .content-image .ellipse{
+    position: relative;
+}
+.hero-section .content-image .ellipse img{
+    height: 250px;
+    width: 500px;
+    position: absolute;
+    top: 400px;
+}
+
+.hero-section .content-image .tourist img{
+    height: 530px;
+    width: 450px;
+    position: absolute;
+    top: 119px;
+    left: 20px;
+}
+.hero-section .card1{
+    height: 66px;
+    width: 150px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    position: absolute;
+    top: 190px;
+    left: 47%;
+}
+.hero-section .card1 img{
+    height: 32px;
+    width: 32px;
+}
+.hero-section .card2{
+    height:74px;
+    width: 173px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    justify-content: center;
+    position: absolute;
+    top: 340px;
+    left: 67.05%;
+}
+.hero-section .card2 h5{
+    font-size: 16px;
+    font-weight: medium;
+    font-family: "Poppins",sans-serif;
+}
+.hero-section .card2 p{
+    font-size: 12px;
+    font-family:"Poppins",sans-serif ;
+    color: #666666;
+}
+.hero-section .card2 img{
+    height: 32px;
+    width: 32px;
+}
+
+.hero-section .card3{
+    height: 68px;
+    width: 192px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    position: absolute;
+    top: 455px;
+    left: 49%;
+}
+.hero-section .card3 h5{
+    font-size: 16px;
+    font-weight: bold;
+    font-family:"Poppins",sans-serif ;
+}
+.hero-section .card3 p{
+    font-size: 12px;
+    color: #666666;
+}
+.hero-section .card3 img{
+    height: 32px;
+    width: 32px;
+}
+.hero-section .search-bar{
+    display: flex;
+    align-items: center;
+    height: 124px;
+    width: 841px;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 755px;
+    left: 15%;
+}
+.search-bar{
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+.hero-section .search-bar a{
+    text-decoration: none;
+    color:#222222;
+    margin: 10px 20px;
+    font-size: 24px;
+}
+.hero-section .search-bar .dropdown p{
+    font-size: 18px;
+    color: #666666;
+}
+.hero-section .search-bar .explore-now{
+    background-color:#FA7436;
+    height: 60px;
+    width: 165px;
+    text-align: center;
+    align-content: center;
+    border-radius: 5px;
+}
+.hero-section .search-bar .explore-now a{
+    color: #FEFCFB;
+    font-size: 18px;
+}
+/* NEED THINGS */
+.need{
+    padding: 20px;
+    text-align: center;
+    height: 724px;
+    width: 100%;
+    background-color:#FFE7DB;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+
+}
+.need .air-img{
+    height: 130.73px;
+    width: 179.9px;
+    position: absolute;
+    top: 120px;
+    left: 70%;
+    bottom: 75.27px;
+}
+.card-content{
+    justify-content: center;
+    margin: 60px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-content .card{
+    height: 278px;
+    width: 378px;
+    background-color: white;
+    padding: 15px 20px;
+    margin: 15px;
+    border-radius: 10px;
+    align-items: flex-start;
+}
+.card-content .card img{
+    height: 48px;
+    width: 48px;
+    margin-bottom: 30px;
+}
+.card-content .card h5{
+    font-family:"Poppins",sans-serif ;
+    font-size: 24px;
+    font-weight: bold;
+    color: #222222;
+}
+.card-content .card p{
+    font-family:"Poppins",sans-serif ;
+    color: #666666;
+    font-size: 18px;
+}
+/* DEALS AND DISCOUNTS */
+.deals-discounts{
+    height: 960px;
+    width: 100%;
+     justify-items: center;
+    text-align: center; 
+    /* background-color: aqua; */
+    padding: 10px;
+    margin-top: 120px;
+    margin-bottom: 64px;
+    align-content: center;
+}
+.deals{
+    height: 142px;
+    width: 675px;
+    /* background-color: aquamarine; */
+}
+ .deals-discounts h1{
+    font-family:"Volkhov",sans-serif ;
+    font-weight: bold;
+    font-size: 48px;
+    margin-top: 60px;
+}
+.deals-discounts p{
+    font-family:"Poppins",sans-serif  ;
+    font-size: 18px;
+    color: #666666;
+    margin-top: 19px;
+}
+
+.deals-discounts .discount-imgs{
+    height: 426px;
+    width: 1170px;
+    margin-top: 64px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.deals-discounts .discount-imgs .img-card{
+    height: 426px;
+    width: 270px;
+    /* background-color: #FEFCFB; */
+}
+.deals-discounts .discount-imgs .img-card h5{
+    font-size: 26px;    
+    font-family: "Poppins",sans-serif ;
+    font-weight: normal;
+}
+.deals-discounts .discount-imgs .img-card p{
+    font-family:"Poppins",sans-serif  ;
+    color: #666666;
+    font-size: 14px;
+}
+.deals-discounts .discount-imgs .img-card .split{
+    height: 136px;
+    width: 270px;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    /* align-content: end; */
+    align-items: end;
+}
+.deals-discounts .discount-imgs .img-card .split .split1{
+    height: 136px;
+    width: 135px;
+}
+.deals-discounts .discount-imgs .img-card .split .split1 .star{
+    height: 16px;
+    width: 16px;
+}
+.deals-discounts .discount-imgs .img-card .split .split1 h5{
+    font-size: 26px;
+    font-weight: bold;
+    font-family: "Poppins",sans-serif;
+}
+.deals-discounts .discount-imgs .img-card .split .split1 p{
+    font-size: 16px;
+    font-family: "Poppins",sans-serif;
+}
+.deals-discounts .discount-imgs .img-card .split .split2{
+    height: 136px;
+    width: 135px;
+    margin-top: 5px;   
+    /* background-color: aquamarine; */
+}
+.deals-discounts .discount-imgs .img-card .split .split2 h5{
+    font-size: 26px;
+    font-family: "Poppins",sans-serif;
+    font-weight: bold;
+}
+.deals-discounts .discount-imgs .img-card .split .split2 p{
+    font-size: 16px;
+    font-family: "Poppins",sans-serif;
+}
+.deals .discount-imgs .img-card .split img{
+    height: 16px;
+    width: 16px;
+}
+.deals .discount-imgs .img-card .split span{
+    font-size: 14px;
+}
+.deals .discount-imgs .img-card .book-btn:hover{
+    background-color: #FA7436;
+    color: #FEFCFB;
+    height: 50px;
+    width: 120px;
+    border-radius: 8px;
+    text-decoration: none;
+} 
+
+
+/*BEST VACATION PLAN*/
+.vacation-plan{
+    height: 893px;
+    width: 100%;
+    background-color: antiquewhite;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+.vacation-plan h1{
+    font-family: "Volkhov",sans-serif;
+    font-weight: bold;
+    font-size: 48px;
+    margin-top: 120px;
+}
+.vacation-plan p{
+    font-family: "Poppins",sans-serif;
+    font-weight: normal;
+    color: #666666;
+}
+.vacation-plan .tree-img{
+    position: absolute;
+    height: 81px;
+    width: 105.1px;
+    top: 100px;
+    left: 75%;
+}
+.vacation-plan .vacarion-card {
+    height: 447px;
+    width: 1401px;
+    display: flex;
+    justify-content: space-evenly;
+    /* background-color: #666666; */
+    margin: 64px;
+}
+.vacation-plan .vacarion-card .trip{
+    height: 447px;
+    width: 369px;
+    /* background-color: #FEFCFB; */
+}
+.vacation-plan .vacarion-card .trip .trip-info{
+    background-color: #FEFCFB;
+    display: flex;
+    justify-content: space-evenly;
+}
+.vacation-plan .vacarion-card .trip .trip-info h5{
+    font-family: "Poppins",sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+}
+.vacation-plan .vacarion-card .trip .trip-info p{
+    font-family: "Poppins",sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+}
+.vacation-plan .vacarion-card .trip .trip-info .vacation-nav{
+    height: 16px;
+    width: 16px;
+    margin-right: 10px;
+}
+.vacation-plan .vacarion-card .trip .trip-info .vacation-star{
+    height: 16px;
+    width: 16px;
+    margin-right: 10px;
+}
+/* .vacation-plan .arrow{
+    position: absolute;
+    top: 262px;
+    left: 70%;
+} */
+.vacation-plan .arrow i{
+    height: 40px;
+    /* width: 40px; */
+    cursor: pointer;
+    color:#FEFCFB ;
+}
+.vacation-plan .arrow i fa-solid fa-circle-arrow-left::before{
+    color: #FA7436;
+}
+
+/* ABOUT US */
+.about-us{
+    height: 596px;
+    width: 100%;
+    justify-items: center;
+    align-content:center;
+    text-align: center;
+    position: relative;
+    background-color: antiquewhite;
+}
+ .about-us .what-about-us{
+    height: 356px;
+    width: 1103px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+ .about-us .what-about-us .about-us-content{
+    height: 268px;
+    width: 364px;
+    text-align: start;
+    margin: 10px 20px;
+    align-content: center;
+}
+.about-us .what-about-us .about-us-content h1{
+    font-family: "Volkhov",sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+}
+.about-us .what-about-us .about-us-content p{
+    font-family: "Poppins",sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: #666666;
+}
+.about-us .what-about-us .client-review{
+    height: 279px;
+    width: 541px;
+    text-align: center;
+    align-content: center;
+    background-color: #FEFCFB;
+    position: relative;
+    border-radius: 10px;
+    
+}
+.about-us .what-about-us .client-review img{
+    position: absolute;
+    left: -30px;
+    top: -20px;
+}
+.about-us .about-tree{
+    height: 188.06px;
+    width: 168.56px;
+    position: absolute;
+    top: 86px;
+    left: 80%;
+} 
+
+/* BLOG */
+.blog{
+    height: 805px;
+    width: 100%;
+    background-color: antiquewhite;
+    text-align: center;
+    justify-items: center;
+    align-content: center;
+}
+.blog h1{
+    font-family:"Volkhov",sans-serif ;
+    font-size: 54px;
+    font-weight: bold;
+}
+.blog .blog-cards{
+    height: 388px;
+    width: 1170px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top:80px;
+}
+.blog .blog-cards .blog-card-info{
+    height: 388px;
+    width: 270px;
+    justify-items: flex-start;
+}
+.blog .blog-cards .blog-card-info img{
+    height: 270px;
+    width: 270px;
+}
+.blog .blog-cards .blog-card-info p{
+    font-family:"Poppins",sans-serif ;
+    font-size: 18px;
+    font-weight: normal;
+}
+.blog .blog-cards .blog-card-info .blog-date{
+    color: #666666;
+    margin-top: 20px;
+}
+
+/* Footer */
+.footer-details{
+    height: 416px;
+    width: 100%;
+    background-color: antiquewhite;
+    justify-items: center;
+    position: relative;
+    text-align: center;
+}
+.footer-details .subscribe{
+    height: 416px;
+    width: 1170.25px;
+    background-color: #FA7436;
+    align-content: center;
+    border-radius: 16px;
+    
+}
+.footer-details .subscribe .tree{
+    height: 113px;
+    width: 113px;
+    position: absolute;
+    top: 0px;
+    left:75.5%;
+}
+.footer-details .subscribe .ring{
+    height: 480px;
+    width: 381px;
+    position: absolute;
+    top: -32px;
+    left: 9.25%;
+}
+.footer-details .subscribe h1{
+    font-family: "Volkhov",sans-serif;
+    font-weight: bold;
+    color: #FEFCFB;
+}
+.email-info {
+    position: relative;
+    width: 100%;
+    max-width: 674px; /* Optional: Adjust based on your design */
+    
+  }
+  
+  #textInput {
+    width: 100%;
+    height: 68px;
+    padding-right: 40px; /* Leave space for the clear button */
+    padding: 10px;
+    /* box-sizing: border-box; */
+    position: absolute;
+    left: 225px;
+    border-radius: 10px;
+    margin-top: 40px;
+  }
+  
+  .btn-subscribe {
+    height: 50px;
+    width: 132px;
+    position: absolute;
+    top: 72.8px;
+    left: 750px;
+    border-radius: 8px;
+    transform: translateY(-50%);
+    background-color: #FA7436;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    z-index: 1;
+  }
+  
+  .btn-subscribe:hover {
+    background-color: #FA7436;
+  }
+  footer .other-details{
+    height: 482px;
+    width: 100%;
+    background-color: antiquewhite;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    gap: 317px;
+  }
+  footer .other-details .company-link{
+    height: 176px;
+    width: 254px;
+    /* background-color: #FEFCFB; */
+  }
+  footer .other-details .company-link h4{
+    font-size: 24px;
+    font-family:"Volkhov",sans-serif ;
+    font-weight: bold;
+  }
+  footer .other-details .company-link h4 img{
+    height: 19px;
+    width: 19px;
+    margin-left:10px;
+  }
+  footer .other-details .company-link p{
+    font-size: 16px;
+    font-family: "Poppins",sans-serif;
+    color: #666666;
+    gap: 10px;
+  }
+  footer .other-details .company-link a{
+    text-decoration: none;
+    color: #666666;
+    gap: 20px;
+  }
+  footer .other-details .company-link a:hover{
+    background-color: #FA7436;
+  }
+  footer .other-details .footer-info{
+    height: 210px;
+    width: 598px;
+    /* background-color: #FEFCFB; */
+    display: flex;
+    justify-content: space-evenly;
+  }
+  footer .other-details .footer-info h5{
+    font-size: 18px;
+    font-family: "Poppins",sans-serif;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  footer .other-details .footer-info a{
+    text-decoration: none;
+    color: #666666;
+    font-size: 18px;
+  }
+  footer .other-details .footer-info .company{
+    height: 210px;
+    width: 140px;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+  }
+  footer .other-details .footer-info .contact{
+    height: 168px;
+    width: 85px;
+    /* background-color: aquamarine; */
+  }
+  footer .other-details .footer-info .more{
+    height: 168px;
+    width: 113px;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+  }
